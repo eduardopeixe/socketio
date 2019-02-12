@@ -29,6 +29,12 @@ io.on('connection', function(socket) {
     users.push(userObj)
     io.emit('all-users', users)
   })
+
+  //Broadcast messages
+  socket.on('send-message', data => {
+    // socket.broadcast.emit('message-received', data)
+    io.emit('message-received', data)
+  })
 })
 
 server.listen(port, function() {
