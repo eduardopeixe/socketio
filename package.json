@@ -1,24 +1,18 @@
 {
-  "name": "socketio",
+  "name": "chat-app",
   "version": "1.0.0",
-  "description": "Socket.io service",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
+    "start": "node ./server.js",
+    "dev": "nodemon ./server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eduardopeixe/socketio.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/eduardopeixe/socketio/issues"
-  },
-  "homepage": "https://github.com/eduardopeixe/socketio#readme",
   "dependencies": {
-    "express": "^4.16.4",
+    "bower": "^1.8.8",
+    "express": "^4.13.4",
     "path": "^0.12.7",
     "socket.io": "^2.2.0"
   }
